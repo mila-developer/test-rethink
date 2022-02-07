@@ -112,6 +112,14 @@ nav {
     }
   }
 
+  button:hover {
+    background-color: #776c64;
+
+    a {
+      color: #FFFFFF;
+    }
+  }
+
   .content-text {
     display: block;
     text-align: left;
@@ -195,6 +203,15 @@ nav {
     a {
       text-decoration: none;
       color: #FFFFFF;
+    }
+  }
+
+  button:hover {
+    padding: 16px;
+    background-color: #FFFFFF;
+
+    a {
+      color: #776c64;
     }
   }
 }
@@ -284,6 +301,14 @@ nav {
       }
     }
   }
+
+  button:hover {
+    background-color: #ffffff;
+
+    a {
+      color: #e2a355;
+    }
+  }
 }
 
 .boxtwo-container {
@@ -338,6 +363,14 @@ nav {
       a {
         text-decoration: none;
         color: #FFFFFF;
+      }
+    }
+
+    button:hover {
+      background-color: #FFFFFF;
+
+      a {
+        color: #e2a355;
       }
     }
   }
@@ -487,6 +520,12 @@ article {
     text-align: center;
     left: 820px;
     z-index: 1;
+    cursor: pointer;
+  }
+
+  #subscribe:hover {
+    background-color: #ffffff;
+    color: #54524f;
   }
 }
 
@@ -526,6 +565,7 @@ footer {
 
   .social-media {
     display: flex;
+    cursor: pointer;
 
     i {
       padding: 8px;
@@ -541,6 +581,7 @@ footer {
 
     ul {
       list-style-type: none;
+      cursor: pointer;
 
       .title {
         font-size: 24px;
