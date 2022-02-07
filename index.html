@@ -5,14 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SummerExploring</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./scss/main.css">
 </head>
 <body>
-  <figure class="logo-img">
-    <img src="./src/images/logo.svg" alt="logo">
-  </figure>
   <div class="wrapper">
     <header>
+      <figure class="logo-img">
+        <img src="./src/images/logo.svg" alt="logo">
+      </figure>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -21,101 +24,120 @@
           <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
-      <figure class="">
-        <img src="./src/images/first-image.svg" alt="">
-      </figure>
-      <div class="">
-        <h1 class="">It's time for hiking</h1>
-        <p class="">Lorem Ipsum Dolor</p>
+      <div clas="search" id="divSearch">
+        <input type="text" id="txtSearch" />
+        <img src="./src/images/search-lupa.svg" alt="search" id="btnSearch" />
       </div>
-      <button class="">
-        <a href="#">Read More</a>
-      </button>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna.</p>
     </header>
 
-    <section class="">
-      <h1>LET´S go</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
-      <div class="">
-        <figure class="">
-          <img src="./src/images/grouptwo-imgone.svg" alt="#">
+    <div class="wrapper-content"></div>
+      <div class="content">
+        <h1 class="">IT'S TIME <br>FOR HIKING</h1>
+        <figure class="image">
+          <img src="./src/images/first-image.svg" alt="">
         </figure>
-        <div class="">
-          <p>Lorem ipsum</p>
-          <p>Lorem ipsum dolor sit amet, 
-          consectetur  adipisicing...</p>
+        <div class="content-text">
+          <!-- <h1 class="">IT'S TIME <br>FOR HIKING</h1> -->
+          <p class="">Lorem Ipsum Dolor</p>
         </div>
+        <button>
+          <a href="#">Read More</a>
+        </button>
+        <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do iusmod tempor incididunt ut<br> labore et dolore magna.</p>
       </div>
-      <div class="">
-        <figure class="">
-          <img src="./src/images/grouptwo-imgtwo.svg" alt="#">
-        </figure>
-        <div class="">
-          <p>Lorem ipsum</p>
-          <p>Lorem ipsum dolor sit amet, 
-          consectetur  adipisicing...</p>
+    </div>
+
+    <section class="lets-go">
+      <div class="lets-go--text">
+        <p class="title">LET´S go</p>
+        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Vivamus lacinia odio vitae vestibulum vestibulum. </p>
+      </div>
+      <div class="lets-go-content">
+        <div class="lets-go--images">
+          <div class="lets-go--image">
+            <figure class="">
+              <img src="./src/images/grouptwo-imgone.svg" alt="#">
+            </figure>
+            <div class="lets-go--info">
+              <div class="info-text">
+                <h6>Lorem ipsum</h6>
+                <p>Lorem ipsum dolor sit amet,</br> 
+                consectetur  adipisicing...</p>
+              </div>
+            </div>
+          </div>  
+          <div class="lets-go--image">
+            <figure class="">
+              <img src="./src/images/grouptwo-imgtwo.svg" alt="#">
+            </figure>
+            <div class="lets-go--info">
+              <h6>Lorem ipsum</h6>
+              <p>Lorem ipsum dolor sit amet,<br> 
+              consectetur  adipisicing...</p>
+            </div>
+          </div>
+          <div class="lets-go--image">
+            <figure class="">
+              <img src="./src/images/grouptwo-imgthree.svg" alt="#">
+            </figure>
+            <div class="lets-go--info">
+              <h6>Lorem ipsum</h6>
+              <p>Lorem ipsum dolor sit amet, </br>
+              consectetur  adipisicing...</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="">
-        <figure class="">
-          <img src="./src/images/grouptwo-imgthree.svg" alt="#">
-        </figure>
-        <div class="">
-          <p>Lorem ipsum</p>
-          <p>Lorem ipsum dolor sit amet, 
-          consectetur  adipisicing...</p>
-        </div>
-      </div>
-      <button class="">
-        <a href="#">Show More</a>
-      </button>
+        <button class="">
+          <a href="#">Show More</a>
+        </button>
+      </div>  
     </section>
 
-    <section class="">
-      <div class="">
-        <div class="">
+    <section class="section-box">
+      <div class="boxone-container">
+        <div class="first-box">
           <figure class="">
-            <img src="./src/images/groupthree-imgone.svg" alt="">
-          </figure>
-          <div class="">
-            <h3>Discount up to 
-              50% All Excursions</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-            <button class="">
-              <a href="#">Read More</a>
-            </button>  
-          </div>
+            <img src="./src/images/groupthree-imgone.svg" alt="#">
+          </figure>  
         </div>
-        <div class="">
-          <div class="">
-            <h3></h3>
-            <p></p>
-            <button class="">
-              <a href="#">Read More</a>
-            </button> 
-          </div>
+        <div class="firstbox-text">
+          <h6>Discount up to 
+            50% All Excursions</h6>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+          <button class="">
+            <a href="#">Read More</a>
+          </button>
+        </div>
+      </div>  
+      <div class="boxtwo-container">
+        <div class="secondbox-text">
+          <h6>January’s Promo:
+            Buy 1 Get 1 Free!</h6>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+          <button class="">
+            <a href="#">Read More</a>
+          </button>
+        </div>
+        <div class="second-box">
           <figure class="">
             <img src="./src/images/groupfour-imgone.svg" alt="#">
-          </figure>
+          </figure>  
         </div>
-      </div>
+      </div> 
     </section>
 
-    <section class="">
-      <div class="">
+    <section class="box-hiking">
+      <div class="content-hiking">
         <h1>Hiking in the mountains</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis </p>
       </div>
     </section>
 
-    <section class="">
-      <figure class="">
+    <section class="explore-world">
+      <h1><span>EXPLORE</span> THE WORLD</h1>
+      <figure class="explore-img">
         <img src="./src/images/groupfive-imgone.svg" alt="#">
       </figure>
-      <div class="">
-        <h1><span>EXPLORE</span> THE WORLD</h1>
-      </div>
       <div class="">
         <div class="">
           <p>lorem ipsum</p>
